@@ -1,0 +1,32 @@
+.topic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10em;
+
+}
+
+.topic-text {
+  color: yellow;
+  font-size: 44px;
+}
+
+.container {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin-top: 10em;
+  margin-left: 10em;
+  color: #000;
+
+}
+
+.task-text {
+  font-size: 33px;
+}
+
+p {
+  /* text-align: center; */
+  padding-top: 10px;
+}
+

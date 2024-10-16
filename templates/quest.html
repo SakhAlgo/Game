@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+
+<form class="container" method="post" action="">
+    <label > {{ information }}</label>
+    <div class="task">
+        <a class="btn btn-primary" href="{{ url_for('quest')}}">
+            <div class="task-text">Задание</div>
+        </a>
+    </div>
+    <p>Вчерашний поход к барону явно удался. Сейчас вы находитесь в пыльной комнате.
+        Нужно найти выход на балкон и подышать свежим воздухом.</p>
+    <p>Выберите сторону света в которую желаете оправиться</p>
+    <select name="direction">
+        <option value="value1">Восток</option>
+        <option value="value2">Запад</option>
+        <option value="value3">Север</option>
+        <option value="value4">Юг</option>
+    </select>
+    <p>Как далеко планируете продвинуться?</p>
+    <input type="text" name="step"/><br><br>
+    <input type="submit" value="Поехали!" />
+</form>
+{% endblock %}
